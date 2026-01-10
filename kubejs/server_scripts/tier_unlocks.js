@@ -42,3 +42,44 @@ ServerEvents.recipes(event => {
   })
 
 })
+const TIERS = {
+  TIER_1: 'tier_1',
+  TIER_2: 'tier_2',
+  TIER_3: 'tier_3'
+}
+ServerEvents.playerInventoryChanged(event => {
+  const player = event.player
+
+  if (player.inventory.has('kubejs:tier_1_token')) {
+    player.stages.add(TIERS.TIER_1)
+  }
+
+  if (player.inventory.has('kubejs:tier_2_token')) {
+    player.stages.add(TIERS.TIER_2)
+  }
+
+  if (player.inventory.has('kubejs:tier_3_token')) {
+    player.stages.add(TIERS.TIER_3)
+  }
+})
+
+ServerEvents.recipes(event => {
+
+  // Tier 1 gated
+  event.remove({ mod: 'create_new_age' })
+  event.remove({ mod: 'create_metalwork' })
+
+  // Re-add when tier is unlocked
+  event.staged(TIERS.TIER_1, e => {
+    // add specific recipes here
+  })
+
+  event.staged(TIERS.TIER_2, e => {
+    // bulk processing, alloys, etc
+  })
+
+  event.staged(TIERS.TIER_3, e => {
+    // sequenced assembly, logistics
+  })
+})
+
