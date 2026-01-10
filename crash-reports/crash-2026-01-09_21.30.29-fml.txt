@@ -1,0 +1,116 @@
+---- Minecraft Crash Report ----
+// This is a token for 1 free hug. Redeem at your nearest Mojangsta: [~~HUG~~]
+
+Time: 2026-01-09 21:30:29
+Description: Mod loading failures have occurred; consult the issue messages for more details
+
+net.neoforged.neoforge.logging.CrashReportExtender$ModLoadingCrashException: Mod loading has failed
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Mod loading issue for: create_otbwg_compat --
+Details:
+	Mod file: /Users/enricdixon/Documents/curseforge/Instances/Create_ Above and Beyond [1.21.1]/mods/create-otbwg-compat-1.0.jar
+	Failure message: Mod create_otbwg_compat requires biomeswevegone 2.3.0 or above
+		Currently, biomeswevegone is not installed
+		
+	Mod version: 0.0NONE
+	Mod issues URL: 
+	Exception message: <No associated exception found>
+
+-- Mod loading issue for: create_sophback_compat --
+Details:
+	Mod file: /Users/enricdixon/Documents/curseforge/Instances/Create_ Above and Beyond [1.21.1]/mods/create_sophback_compat-1.0.jar
+	Failure message: Mod create_sophback_compat requires sophisticatedbackpacks 3.24.1 or above
+		Currently, sophisticatedbackpacks is not installed
+		
+	Mod version: 0.0NONE
+	Mod issues URL: 
+	Exception message: <No associated exception found>
+
+-- Mod loading issue for: kubejs --
+Details:
+	Mod file: /Users/enricdixon/Documents/curseforge/Instances/Create_ Above and Beyond [1.21.1]/mods/kubejs-neoforge-2101.7.2-build.348.jar
+	Failure message: Mod kubejs requires rhino 2101.2.7-build.81 or above
+		Currently, rhino is 2101.2.7-build.77
+		
+	Mod version: 2101.7.2-build.348
+	Mod issues URL: https://kubejs.com/support?source=kubejs&mc=2101&loader=neoforge
+	Exception message: <No associated exception found>
+
+-- Mod loading issue for: colorwheel --
+Details:
+	Mod file: /Users/enricdixon/Documents/curseforge/Instances/Create_ Above and Beyond [1.21.1]/mods/colorwheel-neoforge-1.2.0+mc1.21.1.jar
+	Failure message: Mod colorwheel is incompatible with irisflw any
+		Currently, irisflw is 2.0.5
+		The reason is: Mixin conflict with Iris Flywheel Compat
+	Mod version: 1.2.0+mc1.21.1
+	Mod issues URL: https://github.com/djefrey/Colorwheel/issues
+	Exception message: <No associated exception found>
+
+-- Mod loading issue for: create --
+Details:
+	Mod file: /Users/enricdixon/Documents/curseforge/Instances/Create_ Above and Beyond [1.21.1]/mods/create-1.21.1-6.0.9.jar
+	Failure message: Mod create is incompatible with radium any
+		Currently, radium is 0.13.1+git.4994e83
+		The reason is: Radium is a unofficial port of Lithium, Lithium is now natively available for NeoForge and does not suffer from the same issues radium does, use Lithium instead.
+	Mod version: 6.0.9
+	Mod issues URL: https://github.com/Creators-of-Create/Create/issues
+	Exception message: <No associated exception found>
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Mac OS X (aarch64) version 15.6.1
+	Java Version: 21.0.7, Microsoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Microsoft
+	Memory: 128138328 bytes (122 MiB) / 910163968 bytes (868 MiB) up to 5301600256 bytes (5056 MiB)
+	CPUs: 8
+	Processor Vendor: Apple Inc.
+	Processor Name: Apple M1
+	Identifier: Apple Inc. Family 0x1b588bb3 Model 0 Stepping 0
+	Microarchitecture: ARM64 SoC: Firestorm + Icestorm
+	Frequency (GHz): 3.20
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 8
+	Graphics card #0 name: Apple M1
+	Graphics card #0 vendor: Apple (0x106b)
+	Graphics card #0 VRAM (MiB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: unknown
+	Memory slot #0 capacity (MiB): 0.00
+	Memory slot #0 clockSpeed (GHz): 0.00
+	Memory slot #0 type: unknown
+	Virtual memory max (MiB): 8192.00
+	Virtual memory used (MiB): 6297.70
+	Swap memory total (MiB): 0.00
+	Swap memory used (MiB): 0.00
+	Space in storage for jna.tmpdir (MiB): available: 23729.13, total: 233752.44
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): available: 23729.13, total: 233752.44
+	Space in storage for io.netty.native.workdir (MiB): available: 23729.13, total: 233752.44
+	Space in storage for java.io.tmpdir (MiB): available: 23729.13, total: 233752.44
+	Space in storage for workdir (MiB): available: 23729.13, total: 233752.44
+	JVM Flags: 2 total; -Xmx5056m -Xms256m
+	ModLauncher: 11.0.5+main.901c6ea8
+	ModLauncher launch target: forgeclient
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.42.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.42.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.42.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.5.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.5.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		kotlinforforge@5.10.0
+		__fabric_loader_bootstrap@2.5.29+0.16.0+1.21
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		client-1.21.1-20240808.144430-srg.jar             |Minecraft                     |minecraft                     |1.21.1              |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		neoforge-21.1.218-universal.jar                   |NeoForge                      |neoforge                      |21.1.218            |Manifest: NOSIGNATURE
